@@ -22,7 +22,7 @@ mobSearchBtn.addEventListener("click", () => {
 
 
 
-let headerLogo = document.querySelector(".header__right img");
+let headerLogo = document.querySelector(".header-right img");
 
 headerLogo.addEventListener("click", () => {
   localStorage.setItem('searchString', "Youtube Popular");
