@@ -5,8 +5,8 @@ const searchBtn = document.querySelector(".header___search > img");
 const searchInput = document.querySelector(".header___search > input");
 
 const mobSearchBtn = document.querySelector(".mob_search-div");
-const moblogo = document.querySelector(".header__right");
-const searchBar = document.querySelector(".header__middle");
+const moblogo = document.querySelector(".header-left");
+const searchBar = document.querySelector(".header-middle");
 const searchBarinput = document.querySelector(".header___search");
 
 searchBtn.addEventListener("click", () => {

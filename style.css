@@ -77,7 +77,7 @@ html {
     z-index: 999;
   }
   
-  .header__right {
+  .header-left {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -85,11 +85,11 @@ html {
     flex: 1;
   }
   
-  .header__right img {
+  .header-left img {
     cursor: pointer;
   }
   
-  .header__middle {
+  .header-middle {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -118,7 +118,7 @@ html {
     color: var(--white-clr);
   }
   
-  .header__mike {
+  .header-mike {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +129,7 @@ html {
     background-color: var(--dark-clr);
   }
   
-  .header__left {
+  .header-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -137,7 +137,7 @@ html {
     flex: 1;
   }
   
-  .header__left img {
+  .header-right img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -172,38 +172,49 @@ html {
   
   .main__left {
     margin-top: 1vw;
-    width: 15%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
     overflow-y: auto;
   }
-  .main__subscriptions {
+  .main__main-ul{
+    width: 100%;
+  }
+  .main-subscriptions {
     margin-top: 20px;
+    width: 100%;
   }
   
-  .main__subscriptions ul li img {
+  .main-subscriptions ul li img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
   }
   
-  .main__subscriptions h4 {
+  .main-subscriptions h4 {
     color: var(--gray-clr);
   }
-  .main__more {
+  .main-more{
+    width: 100%;
     margin-top: 20px;
     color: var(--gray-clr);
   }
-  
-  .ul {
+
+  .ul{
     list-style: none;
     border-bottom: 2px solid var(--lightBorder-clr);
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
+  .para{
+    border-top: 2px solid var(--lightBorder-clr);
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+  }
   .ul:last-child {
     padding-bottom: 20px;
   }
@@ -398,7 +409,7 @@ html {
   }
 
   @media (max-width: 768px) {
-    .header__left {
+    .header-right {
       display: none;
     }
     .header {
@@ -410,16 +421,16 @@ html {
       align-items: center;
       justify-content: center;
     }
-    .header__right i {
+    .header-left i {
       display: none;
     }
-    .header__middle {
+    .header-middle {
       display: none;
     }
   }
   
   @media (min-width: 768px) {
-    .header__left {
+    .header-right {
       display: flex;
     }
   
