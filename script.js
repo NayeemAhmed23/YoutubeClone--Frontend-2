@@ -60,9 +60,7 @@ headerItems.forEach((item) => {
 
 let videoGrid = document.getElementById("video-grid");
 
-/*
-@param {String} searchString
-*/
+
 
 
 
